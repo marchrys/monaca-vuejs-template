@@ -4,19 +4,10 @@ let app = {
   init: function(){
     initSounds();
 
-    const langStr = window.navigator.language;
-
-    //On détecte la langue de l'appareil
-    if(langStr.substr(0, 2) == 'fr'){
-        app.lang = 'fr';
-    }
-    else{
-        app.lang = 'en';
-    }
-
      const vue = new Vue({
        el: '#app',
        data: {
+         lang: null,
          message: 'Hello world!',
          allSoundsLoaded
        },
@@ -26,7 +17,14 @@ let app = {
         //  }
        },
        beforeMount(){
-          // this.sayHello()
+          const langStr = window.navigator.language;
+          //On détecte la langue de l'appareil
+          if(langStr.substr(0, 2) == 'fr'){
+              this.lang = 'fr';
+          }
+          else{
+              this.lang = 'en';
+          }
        },
      });
   }
