@@ -4,14 +4,16 @@ const screens = [
     title: {
       en: 'Training',
       fr: 'Entraînement'
-    }
+    },
+    div: '#training'
   },
   {
     id: 2,
     title: {
       en: 'Settings',
       fr: 'Options'
-    }
+    },
+    div: '#settings'
   }
 ];
 

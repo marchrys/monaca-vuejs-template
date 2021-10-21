@@ -1,7 +1,8 @@
 const app = new Vue({
   el: '#app',
   data: {
-    lang: null
+    lang: null,
+    screens
   },
   methods: {
     detectNavigatorLanguage: function() {
