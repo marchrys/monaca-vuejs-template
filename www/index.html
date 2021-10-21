@@ -22,7 +22,7 @@
             
           </div> -->
           <div class="nav-content">
-            <span class="nav-title" id="app-title"></span>
+            <span class="nav-title" id="app-title">{{ texts.appTitle[lang] }}</span>
             <ul id="tabs-container" class="tabs tabs-transparent">
               <li v-for="screen in screens" class="tab">
                 <a v-bind:href="screen.div">{{ screen.title[lang] }}</a>
@@ -32,11 +32,10 @@
         </nav>
 
         <div class="container">
-          
             <div id="training">training</div>
             <div id="settings">settings</div>
-          </div>
         </div>
+      </div>
 
       </div>
 
@@ -50,6 +49,7 @@
       <script type="text/javascript" src="js/buffer-loader.js"></script>
       <script type="text/javascript" src="js/notes-player.js"></script>
 
+      <script src="js/texts.js"></script>
       <script src="js/screens.js"></script>
 
       <!-- Import js files -->
